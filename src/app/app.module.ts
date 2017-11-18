@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 
 // For the import below, we don't have to follow the entire file path because we have created a barrel in the 'entries' directory 
 // index.ts that re-exports all of the components and services for a feature.
-import { EntryListComponent } from './entries';
+import { EntryListComponent, EntryComponent } from './entries';
 
 
 // Decorator. When you aply a decorator to a class, function, or property you are post proccessing it.
@@ -19,6 +19,7 @@ import { EntryListComponent } from './entries';
 	imports: [BrowserModule],
 	declarations: [
 		AppComponent,
+		EntryComponent,
 		EntryListComponent
 		],
 	bootstrap: [AppComponent]
